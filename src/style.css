@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e27838;
+  font-family: "Koulen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+h1 {
+  width: 80vw;
+  font-size: 4em;
+  letter-spacing: 16px;
+}
+
+main {
+  padding: 0 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+}
+
+#card-box {
+  background-color: #3c7857;
+  border-top: solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  gap: 30px;
+}
+
+p {
+  font-size: 2.4em;
+  color: white;
+  padding: 2%;
+}
+
+input {
+  border: none;
+  border-radius: 20px;
+  background-color: beige;
+  font-size: 2.4em;
+  width: 480px;
+  height: 60px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  margin-bottom: 20px;
+  opacity: 75%;
+  width: 250px;
+  height: 60px;
+  font-size: xx-large;
+}
