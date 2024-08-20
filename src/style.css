@@ -70,3 +70,7 @@ button {
   height: 60px;
   font-size: xx-large;
 }
+
+#return-btn {
+  display: none;
+}

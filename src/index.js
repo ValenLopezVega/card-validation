@@ -10,9 +10,23 @@ const validateCardNumber = () => {
   document.getElementById('validation-msg').textContent = validationMsg;
   document.getElementById('validation-msg').style.display = 'block';
   document.getElementById('card-number').style.display = 'none';
+  document.getElementById('verify-btn').style.display = 'none';
+  document.getElementById('return-btn').style.display = 'block';
+}
+
+const returnToInitial = () => {
+  document.getElementById('verify-btn').style.display = 'block';
+  document.getElementById('return-btn').style.display = 'none';
+  document.getElementById('card-number').style.display = 'block';
+  document.getElementById('validation-msg').style.display = 'none';
 }
 
 const verifyBtn = document.getElementById('verify-btn');
 verifyBtn.addEventListener('click', () => {
   validateCardNumber();
+})
+
+const returnBtn = document.getElementById('return-btn');
+returnBtn.addEventListener('click', () => {
+  returnToInitial();
 })
