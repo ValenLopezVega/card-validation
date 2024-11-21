@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <div id="title">
-        <h1>MITSKI TOUR TICKETS</h1>
-      </div>
-    </header>
-    <main>
-        <img src="img/mitski-concert.jpg" alt="poster">
-        <div id="card-box">
-          <p>PREVIO AL PAGO VERIFICAREMOS LA VALIDEZ DE TU TARJETA</p>
-          <input type="text" id="card-number" placeholder="Número tarjeta" minlength="12">
-          <p id="validation-msg"></p>
-          <button id="verify-btn">CONTINUAR</button>
-          <button id="return-btn">REGRESAR</button>
-        </div>
-    </main>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Card validation for ticket purchases">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="icon" type="image/x-icon" href="img/ticket.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div id="title">
+      <h1>MITSKI TOUR TICKETS</h1>
+    </div>
+  </header>
+  <main>
+    <img src="img/mitski-concert.jpg" alt="poster">
+    <div id="card-box">
+      <p>PREVIO AL PAGO VERIFICAREMOS LA VALIDEZ DE TU TARJETA</p>
+      <input type="text" id="card-number" placeholder="Número tarjeta" minlength="12">
+      <p id="validation-msg"></p>
+      <button id="verify-btn">CONTINUAR</button>
+      <button id="return-btn">REGRESAR</button>
+    </div>
+  </main>
+  <a href="https://www.flaticon.com/free-icons/validating-ticket" title="validating ticket icons">Validating ticket
+    icons created by Pixel perfect - Flaticon</a>
+  <script defer src="index.js" type="module"></script>
+</body>
+
 </html>
