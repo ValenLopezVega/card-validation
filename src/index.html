@@ -5,14 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Card validation for ticket purchases">
+  <meta name="theme-color" content="#e27838"/>
   <title>Tarjeta de crédito válida</title>
-  <link rel="icon" type="image/x-icon" href="img/ticket.ico" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  <link rel="apple-touch-icon" href="img/ios/192.png">
   <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
@@ -39,6 +42,16 @@
       icons created by Pixel perfect - Flaticon</a>
   </footer>
   <script defer src="index.js" type="module"></script>
+  <script defer type="text/javascript">
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+        navigator.serviceWorker
+        .register("/serviceWorker.js")
+        .then(res => console.log("service worker registered"))
+        .catch(err => console.log("service worker not registered", err))
+      })
+    }
+  </script>
 </body>
 
 </html>
