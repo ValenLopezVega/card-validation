@@ -13,7 +13,7 @@ body {
 #title {
   display: flex;
   justify-content: center;
-  padding: 8% 2% 4%;
+  padding: 8% 1% 4%;
 }
 
 h1 {
@@ -37,6 +37,7 @@ a:link {
   color: black;
   background-color: transparent;
   text-decoration: none;
+  font-size: small;
 }
 
 a:visited {
@@ -46,7 +47,7 @@ a:visited {
 }
 
 #card-box {
-  height: 220px;
+  height: 210px;
   background-color: #3c7857;
   border-top: 8px solid black;
   display: flex;
@@ -64,6 +65,7 @@ p {
 
 #validation-msg {
   display: none;
+  
 }
 
 input {
@@ -90,6 +92,18 @@ button {
 
 #return-btn {
   display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p{
+  font-size: small;
+  color: black;
 }
 
 @media only screen and (min-width: 768px) {
