@@ -4,10 +4,7 @@ const validateCardNumber = () => {
   const cardNumber = document.getElementById('card-number').value;
   let validationMsg = '';
 
-  if(cardNumber.length < 12){
-    validationMsg = 'DEBE INGRESAR MINIMO 12 DIGITOS';
-
-  } else {
+  if(cardNumber.length >= 12){
     const isValidCard = validator.isValid(cardNumber);
     const input = document.getElementById('card-number');
     const maskedValue = validator.maskify(input.value);
@@ -16,10 +13,10 @@ const validateCardNumber = () => {
     document.getElementById('card-number').style.display = 'none';
     document.getElementById('verify-btn').style.display = 'none';
     document.getElementById('return-btn').style.display = 'block';
+    document.getElementById('validation-msg').textContent = validationMsg;
+    document.getElementById('validation-msg').style.display = 'block';
   }
 
-  document.getElementById('validation-msg').textContent = validationMsg;
-  document.getElementById('validation-msg').style.display = 'block';
 }
 
 const returnToInitial = () => {

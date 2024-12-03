@@ -17,7 +17,6 @@ body {
 }
 
 h1 {
-  width: 80vw;
   font-size: 1.3em;
   letter-spacing: 7px;
 }
@@ -54,18 +53,23 @@ a:visited {
   flex-direction: column;
   align-items: center;
   padding-top: 2%;
-  gap: 20px;
 }
 
 p {
   font-size: 1em;
   color: white;
-  padding-top: 3%;
 }
 
 #validation-msg {
   display: none;
-  
+}
+
+label{
+  font-size: 0.8em;
+}
+
+.card-box-item{
+  margin: 2.5%;
 }
 
 input {

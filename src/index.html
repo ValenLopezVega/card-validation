@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Card validation for ticket purchases">
-  <meta name="theme-color" content="#e27838"/>
+  <meta name="theme-color" content="#e27838" />
   <title>Tarjeta de crédito válida</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
   <link rel="apple-touch-icon" href="img/ios/192.png">
@@ -15,7 +15,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
@@ -29,26 +29,28 @@
   img/mitski-concert-mobile.jpg 768w,
   img/mitski-concert-desktop.png 960w" sizes="(max-width: 960px) 100vw, 50vw" alt="Descripción de la imagen">
     <div id="card-box">
-      <p>PREVIO AL PAGO VERIFICAREMOS LA VALIDEZ DE TU TARJETA</p>
-      <input type="text" id="card-number" placeholder="Número tarjeta" minlength="12">
+      <p class="card-box-item">PREVIO AL PAGO VERIFICAREMOS LA VALIDEZ DE TU TARJETA</p>
+      <label for="card-number" class="card-box-item">EL NUMERO DE LA TARJETA DEBE CONTENER MINIMO DOCE DIGITOS</label>
+      <input type="text" id="card-number" placeholder="Número tarjeta" minlength="12" class="card-box-item">
       <p id="validation-msg"></p>
-      <button id="verify-btn">CONTINUAR</button>
-      <button id="return-btn">REGRESAR</button>
+      <button id="verify-btn" class="card-box-item">CONTINUAR</button>
+      <button id="return-btn" class="card-box-item">REGRESAR</button>
     </div>
   </main>
   <footer>
-    <p>Card validation - desarrollado por <a href="https://linkedin.com/in/valenlopezvega" target="_blank">VALENTINA LOPEZ</a> - <a href="https://github.com/ValenLopezVega/card-validation" target="_blank">CODIGO FUENTE</a> </p>
+    <p>Card validation - desarrollado por <a href="https://linkedin.com/in/valenlopezvega" target="_blank">VALENTINA
+        LOPEZ</a> - <a href="https://github.com/ValenLopezVega/card-validation" target="_blank">CODIGO FUENTE</a> </p>
     <a href="https://www.flaticon.com/free-icons/validating-ticket" title="validating ticket icons">Validating ticket
       icons created by Pixel perfect - Flaticon</a>
   </footer>
   <script defer src="index.js" type="module"></script>
   <script defer type="text/javascript">
     if ("serviceWorker" in navigator) {
-      window.addEventListener("load", function() {
+      window.addEventListener("load", function () {
         navigator.serviceWorker
-        .register("/serviceWorker.js")
-        .then(res => console.log("service worker registered"))
-        .catch(err => console.log("service worker not registered", err))
+          .register("/serviceWorker.js")
+          .then(res => console.log("service worker registered"))
+          .catch(err => console.log("service worker not registered", err))
       })
     }
   </script>
